@@ -1,0 +1,102 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+	font-size: 62.5%;
+}
+
+body{
+	font-size: 1.6rem;
+
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right,
+                                rgb(0, 0, 0, .3) 100%, rgb(0, 0, 0, .3) 100%), 
+                                center / cover url(/images/dino-reichmuth-A5rCN8626Ck-unsplash.jpg);
+}
+
+.flex{
+    display: flex;
+}
+
+h1{
+    font-size: 6.5rem;
+    color:rgba(255, 255, 255, .8);
+    margin-bottom: 4rem;
+}
+
+main{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    
+    transform: translate(-50%, -50%);
+}
+
+.form__input-group{
+    column-gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.form__group label{
+    color: white;
+    background-color: red;
+    font-size: 3rem;
+    padding: .5rem .8rem;
+}
+
+
+.form__group input{
+    font-size: 3.3rem;
+    width: 27rem;
+}
+
+.form__group label,
+.form__group input{
+    border: transparent;
+}
+
+.form__group input:focus{
+    outline: transparent;
+    border: .2rem solid rgb(13, 177, 13);
+}
+
+.form__button-group{
+    justify-content: flex-end;
+    column-gap: 2rem;
+}
+
+.form__group button{
+    padding: 1.5rem 2rem;
+    background-color: rgba(255, 255, 255, .9);
+    border: transparent;
+    color: red;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.form__group button:hover,
+.form__group button:active{
+    background-color: red;
+    color: white;
+}
+
+@media screen and (max-width: 768px){
+
+    h1{
+        font-size: 4rem;
+    }
+
+    .form__input-group{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .form__button-group{
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+}
